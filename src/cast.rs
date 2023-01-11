@@ -23,7 +23,10 @@
 
 use basenum::Primitive;
 use vec::traits::GenVec;
-use vec::vec::*;
+use vec::vec::{
+    BVec2, BVec3, BVec4, DVec2, DVec3, DVec4, IVec2, IVec3, IVec4, Vec2, Vec3,
+    Vec4,  Vector2, Vector3, Vector4, UVec2, UVec3, UVec4
+};
 use std::default::Default;
 use num::{ ToPrimitive, Zero };
 

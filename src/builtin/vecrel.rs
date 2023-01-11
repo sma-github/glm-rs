@@ -29,7 +29,7 @@ use vec::vec::{ Vector2, Vector3, Vector4 };
 use std::cmp::{ PartialEq, PartialOrd };
 
 pub trait VecRel<T: Primitive, B: GenBVec>: GenVec<T> {
-    fn zip_bool(&self, rhs: &Self, fn(&T, &T) -> bool) -> B;
+    fn zip_bool(&self, rhs: &Self, oper: fn(&T, &T) -> bool) -> B;
 }
 
 macro_rules! impl_vecrel_for(
